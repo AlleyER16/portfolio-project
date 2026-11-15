@@ -27,17 +27,6 @@ const getTheme = () => {
     : currentTheme;
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  const theme = getTheme();
-
-  if (theme === "dark") {
-    darkModeToggle.classList.add("toggle--active");
-    document.documentElement.dataset.theme = "dark";
-  } else {
-    document.documentElement.dataset.theme = "light";
-  }
-});
-
 darkModeToggle.addEventListener("click", () => {
   const theme = getTheme();
 
@@ -55,6 +44,17 @@ darkModeToggle.addEventListener("click", () => {
 
     // trigger css theme change as defined in css style with light-dark
     document.documentElement.dataset.theme = "dark";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const theme = getTheme();
+
+  if (theme === "dark") {
+    darkModeToggle.classList.add("toggle--active");
+    document.documentElement.dataset.theme = "dark";
+  } else {
+    document.documentElement.dataset.theme = "light";
   }
 });
 
