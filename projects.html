@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Projects :: Rehoboth Micah-Daniels | Software Engineer</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <meta
+      name="description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Social Media Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rehoboth-portfolio.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      property="og:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta name="twitter:image:width" content="800" />
+    <meta name="twitter:image:height" content="600" />
+
+    <!-- CSS Import -->
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/projects.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand-toggle">
+          <button class="header__toggle" id="navbar-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <div class="header__brand">&lt;Alley /&gt;</div>
+        </div>
+        <nav class="header__right">
+          <ul class="header__navbar" id="navbar">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="about-me.html"> About </a>
+            </li>
+            <li>
+              <a href="projects.html" class="active"> Projects </a>
+            </li>
+            <li>
+              <a href="academic-planner.html"> Academic Planner </a>
+            </li>
+          </ul>
+          <div class="header__actions">
+            <a href="contact-me.html" class="header__cta">
+              Contact Me!
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 12A10 10 0 1 1 12 2" />
+                <path d="M22 2 12 12" />
+                <path d="M16 2h6v6" />
+              </svg>
+            </a>
+            <button class="toggle" id="dark-mode-toggle">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Professional Projects Section -->
+    <section class="projects-section">
+      <div class="projects-section__container container">
+        <div class="projects-section__main">
+          <p class="style-module-scss-module__Sqo1mq__meta">// page.projects</p>
+          <div class="projects-section__header">
+            <h1 class="projects-section__heading">Professional Projects</h1>
+            <p>
+              Live projects build to solve real problems and with growing
+              customer base.
+            </p>
+          </div>
+          <div class="projects-2">
+            <a
+              target="_blank"
+              class="project project--full"
+              href="https://plug.ng"
+            >
+              <div class="project__header">
+                <img
+                  alt="Plug.ng"
+                  class="project__img"
+                  src="/assets/imgs/projects/plug-ng.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Plug.ng</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Front-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    Plug.ng is an all-in-one digital platform that simplifies
+                    everyday payments, empowers businesses, and connects users
+                    to services.
+                  </p>
+                  <ul class="project__list">
+                    <li>
+                      Implemented UI from Figma using modern design approach
+                    </li>
+                    <li>
+                      Developed a robust form control library to be used across
+                      project modules
+                    </li>
+                    <li>
+                      Managed Front-end team and made technology decisions
+                    </li>
+                    <li>
+                      Collaborated with backend and contributed to API spec
+                    </li>
+                  </ul>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                    <div>Next.js</div>
+                    <div>Web Socket</div>
+                    <div>Responsiveness</div>
+                    <div>Performance</div>
+                  </div>
+                  <span class="project__action"
+                    >View live website <span>→</span></span
+                  >
+                </div>
+                <div class="project__company">
+                  <img alt="" src="/assets/imgs/wiseki-logo.png" />Wiseki
+                  Technologies
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project project--full"
+              href="https://digitsend.com"
+            >
+              <div class="project__header">
+                <img
+                  alt="DigitSend"
+                  class="project__img"
+                  src="/assets/imgs/projects/digitsend.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">DigitSend</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Back-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    A mobile app where users can purchase RMB to pay chinese
+                    suppliers. Fully incorporated wallet features. Bill payment
+                    also integrated: airtime, data, electricity, cable TV.
+                  </p>
+                  <ul class="project__list">
+                    <li>
+                      Developed robust API to serve the mobile application
+                    </li>
+                    <li>
+                      Built a fully functional admin panel to monitor
+                      application processes
+                    </li>
+                    <li>
+                      Scaled application from few users to thousands of users
+                    </li>
+                    <li>
+                      Handled users and transaction load (up to 1 billion naira
+                      processed)
+                    </li>
+                  </ul>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                    <div>Node</div>
+                    <div>Express.js</div>
+                    <div>Redis</div>
+                    <div>Bull MQ</div>
+                    <div>Performance</div>
+                    <div>API Development</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img alt="" src="/assets/imgs/crewel-tech-logo.png" />Crewel
+                  Technologies
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project project--full"
+              href="https://sekiapp.com"
+            >
+              <div class="project__header">
+                <img
+                  alt="Sekiapp"
+                  class="project__img"
+                  src="/assets/imgs/projects/sekiapp.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Sekiapp</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Front-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    SekiApp is a digital financial platform that enables users
+                    to buy, sell, store, and swap cryptocurrencies and gift
+                    cards. It also offers utility bill payments, instant bank
+                    withdrawals, and virtual dollar cards for global online
+                    payments.
+                  </p>
+                  <ul class="project__list">
+                    <li>
+                      Transitioned web app from v1 to v2 with involved massive
+                      user experience update
+                    </li>
+                    <li>
+                      Implemented a lot of feature additions and bug fixes
+                    </li>
+                    <li>Improved user experience on the application</li>
+                  </ul>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img alt="" src="/assets/imgs/wiseki-logo.png" />Wiseki
+                  Technologies
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project project--full"
+              href="https://coycube.com"
+            >
+              <div class="project__header">
+                <img
+                  alt="CoyCube"
+                  class="project__img"
+                  src="/assets/imgs/projects/coycube.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">CoyCube</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Full-stack Developer
+                    </div>
+                  </div>
+                  <p>
+                    CoyCube is a digital business registration and compliance
+                    platform that simplifies CAC registration, business
+                    verification, and post-incorporation services.
+                  </p>
+                  <ul class="project__list">
+                    <li>Developed B2C and B2B</li>
+                    <li>Managed Front-end and Back-end team</li>
+                    <li>Made good use of jobs for background tasks</li>
+                    <li>
+                      Implemented a robust wallet system that can handle
+                      concurrent use(for businesses that use API)
+                    </li>
+                  </ul>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                    <div>Next.js</div>
+                    <div>Express.js</div>
+                    <div>Microservices</div>
+                    <div>PostgreSQL</div>
+                    <div>Web Socket</div>
+                    <div>Bull MQ</div>
+                  </div>
+                  <span class="project__action"
+                    >View live website <span>→</span></span
+                  >
+                </div>
+                <div class="project__company">
+                  <div></div>
+                  Ronincube Enterprises
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project project--full"
+              href="https://kandrit.com"
+            >
+              <div class="project__header">
+                <img
+                  alt="Kandrit"
+                  class="project__img"
+                  src="/assets/imgs/projects/kandrit.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Kandrit</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Front-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    A platform that run's live quiz campaign and users can earn
+                    points and real cash on winning of campaigns. Bill payments
+                    airtime, data, electricity and cable TV incorporated too
+                  </p>
+                  <ul class="project__list">
+                    <li>
+                      Developed a highly responsive UI that displays leaderboard
+                      using Websocket
+                    </li>
+                    <li>
+                      Implement a quiz system that support concurrent users
+                    </li>
+                    <li>Enhanced performance of web application</li>
+                  </ul>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>Next.js</div>
+                    <div>Web Socket</div>
+                    <div>Performance</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img alt="" src="/assets/imgs/kandrit-logo.png" />Kandrit
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobby Projects Section -->
+    <section class="projects-section projects-section--variant">
+      <div class="projects-section__container container">
+        <div class="projects-section__main">
+          <p class="style-module-scss-module__Sqo1mq__meta">
+            // section.hobby_projects
+          </p>
+          <div class="projects-section__header">
+            <h1 class="projects-section__heading">Hobby Projects</h1>
+            <p>Hobby projects and other projects built for practice and fun</p>
+          </div>
+          <div class="projects">
+            <a
+              target="_blank"
+              class="project"
+              href="https://omnifood-alley.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="Omnifood"
+                  class="project__img"
+                  src="/assets/imgs/projects/omnifood.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Omnifood</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project"
+              href="https://alley-natours.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="Natours"
+                  class="project__img"
+                  src="/assets/imgs/projects/natours.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Natours</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>SASS</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project"
+              href="https://alley-trillo.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="Trillo"
+                  class="project__img"
+                  src="/assets/imgs/projects/trillo.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Trillo</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>SASS</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project"
+              href="https://alley-getlinked.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="GetLinked Hackathon"
+                  class="project__img"
+                  src="/assets/imgs/projects/get-linked.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">GetLinked Hackathon</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>SASS</div>
+                    <div>JavaScript</div>
+                    <div>Animations</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project"
+              href="https://elearn-app.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="E-Learn"
+                  class="project__img"
+                  src="/assets/imgs/projects/elearn.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">E-Learn</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>SASS</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              class="project"
+              href="https://alley-ecommerce.netlify.app/"
+            >
+              <div class="project__header">
+                <img
+                  alt="Hekto E-Commerce"
+                  class="project__img"
+                  src="/assets/imgs/projects/hekto.png"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Hekto E-Commerce</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Front-end
+                    </div>
+                  </div>
+                  <div class="project__stack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>SASS</div>
+                    <div>Web Design</div>
+                    <div>Responsiveness</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <section class="cta-section">
+          <h1 class="cta-section__heading">
+            Want to bring <span>your ideas to life?</span>
+          </h1>
+          <div class="cta-section__content">
+            <p class="cta-section__info">
+              Reach out to me, let us discuss your ideas and how we can bring
+              them to live. I'm open to collaboration on solving interesting
+              problems and building interesting products.
+            </p>
+            <div>
+              <a
+                class="button"
+                href="https://wa.me/+2347055655615"
+                target="_blank"
+              >
+                Get in touch with me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="footer__divider"></div>
+        <div class="footer-section">
+          <div class="footer-section__header">
+            <h1>&lt;Alley /&gt;</h1>
+            <p>&copy; 2026 rehobothmd.dev <span></span> All rights reserved</p>
+          </div>
+          <div class="footer-section__main">
+            <div>
+              <h3>Core Skills</h3>
+              <ul>
+                <li>
+                  <span>Web Design</span>
+                </li>
+                <li>
+                  <span>Web Development</span>
+                </li>
+                <li>
+                  <span>Problem Solving</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get in touch</h3>
+              <ul>
+                <li>
+                  <a href="https://wa.me/+2347055655615" target="_blank">
+                    Direct Message <span>&rarr;</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rehobothmd/"
+                    target="_blank"
+                  >
+                    LinkedIn <span>&rarr;</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-me.html">About</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="academic-planner.html">Academic Planner</a>
+                </li>
+                <li>
+                  <a href="contact-me.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom">
+      <div class="bottom__time">
+        <span> Date & Time </span>
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+      <div class="bottom__audio">
+        <div class="audio">
+          <audio
+            src="https://rehoboth-md.s3.af-south-1.amazonaws.com/audio.mp3"
+            loop
+            id="page-audio"
+          ></audio>
+          <button class="audio__control" id="page-audio-control">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="play-icon"
+            >
+              <path
+                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="pause-icon"
+              style="display: none"
+            >
+              <rect x="14" y="3" width="5" height="18" rx="1" />
+              <rect x="5" y="3" width="5" height="18" rx="1" />
+            </svg>
+          </button>
+          <div class="audio__progress">
+            <div style="width: 0%" id="page-audio-progress"></div>
+          </div>
+        </div>
+        <div
+          class="bottom__audio-text"
+          title="Aliotta Haynes Jeremiah - Lake Shore Drive"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+            />
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+          </svg>
+          <p>Aliotta Haynes Jeremiah - Lake Shore Drive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M14 9 9 4 4 9" />
+        <path d="M20 20h-7a4 4 0 0 1-4-4V4" />
+      </svg>
+    </button>
+
+    <!-- JS Import -->
+    <script type="text/javascript" src="assets/js/global.js"></script>
+  </body>
+</html>

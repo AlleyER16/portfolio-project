@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rehoboth Micah-Daniels | Software Engineer</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <meta
+      name="description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Social Media Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rehoboth-portfolio.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      property="og:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta name="twitter:image:width" content="800" />
+    <meta name="twitter:image:height" content="600" />
+
+    <!-- CSS Import -->
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand-toggle">
+          <button class="header__toggle" id="navbar-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <div class="header__brand">&lt;Alley /&gt;</div>
+        </div>
+        <nav class="header__right">
+          <ul class="header__navbar" id="navbar">
+            <li>
+              <a href="index.html" class="active"> Home </a>
+            </li>
+            <li>
+              <a href="about-me.html"> About </a>
+            </li>
+            <li>
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li>
+              <a href="academic-planner.html"> Academic Planner </a>
+            </li>
+          </ul>
+          <div class="header__actions">
+            <a href="contact-me.html" class="header__cta">
+              Contact Me!
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 12A10 10 0 1 1 12 2" />
+                <path d="M22 2 12 12" />
+                <path d="M16 2h6v6" />
+              </svg>
+            </a>
+            <button class="toggle" id="dark-mode-toggle">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__main">
+          <p class="meta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 19h8" />
+              <path d="m4 17 6-6-6-6" />
+            </svg>
+            <span>cat INTRO.md</span>
+          </p>
+          <div class="hero__intro">
+            <h1 class="hero__heading">
+              <span>Hello, I'm</span>
+              <br />
+              <span>Rehoboth Micah-Daniels</span>
+            </h1>
+            <p>Software Engineer <span></span> Full-stack developer</p>
+          </div>
+
+          <p>
+            Hello and welcome to my portfolio. I’m a Full-Stack Developer
+            focused on building scalable, high-performance web applications
+            across fintech and real-world commerce systems.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="projects.html">See my projects</a>
+            <a class="button button--outline" href="about-me.html">
+              About Me
+            </a>
+          </div>
+
+          <div class="hero__cta">
+            <div class="overlay" id="intro-video-overlay"></div>
+            <video class="video" id="intro-video" controls>
+              <source
+                src="https://rehoboth-md.s3.af-south-1.amazonaws.com/video.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <button class="video__control" id="intro-video-control">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                  />
+                </svg>
+              </span>
+              Play Intro Video
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__img-wrapper">
+          <img src="/assets/imgs/alley.jpg" alt="" class="hero__img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Summary Section -->
+    <section class="about-summary">
+      <div class="about-summary__container container">
+        <div class="code-block">
+          <div class="code-block__header">
+            <div class="code-block__header-actions">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="code-block__header-file">
+              <img src="/assets/imgs/go.svg" alt="" />
+              <p>main.go — about</p>
+            </div>
+          </div>
+
+          <div class="code-block__main">
+            <div class="code-block__code">
+              <div class="code-block__line-numbers">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+                <p>11</p>
+                <p>12</p>
+                <p>13</p>
+                <p>14</p>
+              </div>
+
+              <div class="code-block__code-section">
+                <div>
+                  <span style="color: #61afef">package</span>&nbsp;
+                  <span style="color: #4ec9b0">main</span>
+                </div>
+                <div></div>
+                <div>
+                  <span style="color: #61afef">type</span>&nbsp;
+                  <span style="color: #4ec9b0">developer</span>&nbsp;
+                  <span style="color: #61afef">struct</span>&nbsp;
+                  <span style="color: #d7ba7d">{</span>
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #9cdcfe">fullName</span>&nbsp;
+                  <span style="color: #4ec9b0">string</span>
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #9cdcfe">role</span>&nbsp;
+                  <span style="color: #4ec9b0">string</span>
+                </div>
+                <div>
+                  <span style="color: #d7ba7d">}</span>
+                </div>
+                <div></div>
+                <div>
+                  <span style="color: #61afef">func</span>&nbsp;
+                  <span style="color: #dcdcaa">main</span>
+                  <span style="color: #d7ba7d">()</span>&nbsp;
+                  <span style="color: #d7ba7d">{</span>
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #9cdcfe">me</span> <span>:=</span>&nbsp;
+                  <span style="color: #4ec9b0">developer</span>
+                  <span style="color: #d7ba7d">{</span>
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #9cdcfe">fullName</span>:&nbsp;
+                  <span style="color: #ce9178"
+                    >{`"Rehoboth Micah-Daniels"`}</span
+                  >
+                  ,
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #9cdcfe">role</span>:&nbsp;
+                  <span style="color: #ce9178">{`"Software Engineer"`}</span>
+                  ,
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="color: #d7ba7d">}</span>
+                </div>
+                <div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span
+                    style="
+                      opacity: 0.7;
+                      color: #9cdcfe;
+                      text-decoration-line: underline;
+                      text-decoration-style: wavy;
+                      text-decoration-color: #f14c4c;
+                    "
+                  >
+                    alley </span
+                  >&nbsp; := &<span style="color: #9cdcfe">me</span>
+                </div>
+                <div>
+                  <span style="color: #d7ba7d">}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-block__output">
+              <div>
+                <p>mac@MacBookPro about % go run main.go</p>
+                <p># command-line-arguments</p>
+                <p>./main.go:13:2: declared and not used: alley</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-summary__main">
+          <p class="meta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 19h8" />
+              <path d="m4 17 6-6-6-6" />
+            </svg>
+            <span>whoami</span>
+          </p>
+          <h1>Who I Am</h1>
+
+          <div class="about-summary__bio">
+            <p>
+              I’m a Full-Stack Developer focused on building scalable,
+              high-performance web applications across fintech and real-world
+              commerce systems.
+            </p>
+            <p>
+              I enjoy working on systems that sit at the intersection of user
+              experience and engineering complexity — especially fintech
+              platforms where correctness, scalability, and performance matter.
+              I’ve built everything from transaction-heavy backend services to
+              reusable frontend architecture and internal tooling to improve
+              developer productivity.
+            </p>
+          </div>
+
+          <div class="about-summary__items">
+            <div>
+              <h1>5+</h1>
+              <p>Years of experience</p>
+            </div>
+            <div>
+              <h1>6+</h1>
+              <p>Live projects</p>
+            </div>
+            <div>
+              <h1>2</h1>
+              <p>Engineering teams led</p>
+            </div>
+          </div>
+
+          <div class="about-summary__cta">
+            <a href="about-me.html" class="button">
+              More about me
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <p class="meta">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m16 18 6-6-6-6" />
+          <path d="m8 6-6 6 6 6" />
+        </svg>
+        await fs.readFile("my_stack.json")
+      </p>
+      <div class="skills-section__skills">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="projects-section__container container">
+        <div class="projects-section__main">
+          <p class="meta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15.295 19.562 16 22"></path>
+              <path d="m17 16 3.758 2.098"></path>
+              <path d="m19 12.5 3.026-.598"></path>
+              <path
+                d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"
+              ></path>
+              <path d="M8 9V2"></path>
+            </svg>
+            <span>show workings? sure </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m10 15 5 5 5-5"></path>
+              <path d="M4 4h7a4 4 0 0 1 4 4v12"></path>
+            </svg>
+          </p>
+          <h1 class="projects-section__heading">Featured Projects</h1>
+          <div class="projects">
+            <a target="_blank" class="project" href="https://plug.ng">
+              <div class="project__header">
+                <img
+                  src="/assets/imgs/projects/plug-ng.png"
+                  alt="Plug.ng"
+                  class="project__img"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Plug.ng</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Front-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    Plug.ng is an all-in-one digital platform that simplifies
+                    everyday payments, empowers businesses, and connects users
+                    to services.
+                  </p>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                    <div>Next.js</div>
+                    <div>Web Socket</div>
+                    <div>Responsiveness</div>
+                    <div>Performance</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img src="/assets/imgs/wiseki-logo.png" alt="" />Wiseki
+                  Technologies
+                </div>
+              </div>
+            </a>
+            <a target="_blank" class="project" href="https://digitsend.com">
+              <div class="project__header">
+                <img
+                  src="/assets/imgs/projects/digitsend.png"
+                  alt="DigitSend"
+                  class="project__img"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">DigitSend</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Back-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    A mobile app where users can purchase RMB to pay chinese
+                    suppliers. Fully incorporated wallet features. Bill payment
+                    also integrated: airtime, data, electricity, cable TV.
+                  </p>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                    <div>Node</div>
+                    <div>Express.js</div>
+                    <div>Redis</div>
+                    <div>Bull MQ</div>
+                    <div>Performance</div>
+                    <div>API Development</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img src="/assets/imgs/crewel-tech-logo.png" alt="" />Crewel
+                  Technologies
+                </div>
+              </div>
+            </a>
+            <a target="_blank" class="project" href="https://sekiapp.com">
+              <div class="project__header">
+                <img
+                  src="/assets/imgs/projects/sekiapp.png"
+                  alt="Sekiapp"
+                  class="project__img"
+                />
+              </div>
+              <div class="project__body">
+                <div class="project__main">
+                  <div class="project__name-role">
+                    <h3 class="project__name">Sekiapp</h3>
+                    <div class="project__role">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m18 16 4-4-4-4"></path>
+                        <path d="m6 8-4 4 4 4"></path>
+                        <path d="m14.5 4-5 16"></path>
+                      </svg>
+                      Senior Front-end Developer
+                    </div>
+                  </div>
+                  <p>
+                    SekiApp is a digital financial platform that enables users
+                    to buy, sell, store, and swap cryptocurrencies and gift
+                    cards. It also offers utility bill payments, instant bank
+                    withdrawals, and virtual dollar cards for global online
+                    payments.
+                  </p>
+                  <div class="project__stack">
+                    <div>SASS</div>
+                    <div>TypeScript</div>
+                    <div>React</div>
+                  </div>
+                  <span class="project__action">
+                    View live website <span>→</span>
+                  </span>
+                </div>
+                <div class="project__company">
+                  <img src="/assets/imgs/wiseki-logo.png" alt="" />Wiseki
+                  Technologies
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="projects-section__action">
+            <a class="button" href="projects.html">
+              View all projects
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M18 8L22 12L18 16"></path>
+                <path d="M2 12H22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <div class="testimonial-section__container container">
+        <div>
+          <p class="meta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15.295 19.562 16 22"></path>
+              <path d="m17 16 3.758 2.098"></path>
+              <path d="m19 12.5 3.026-.598"></path>
+              <path
+                d="M7.61 6.3a3 3 0 0 0-3.92 1.3l-1.38 2.79a3 3 0 0 0 1.3 3.91l6.89 3.597a1 1 0 0 0 1.342-.447l3.106-6.211a1 1 0 0 0-.447-1.341z"
+              ></path>
+              <path d="M8 9V2"></path>
+            </svg>
+            <span>Testimonials</span>
+          </p>
+          <h1>What People Say About Me</h1>
+        </div>
+        <div class="testimonial-section__testimonials">
+          <div class="testimonial">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 80"
+                fill="currentColor"
+                class="testimonial__img"
+              >
+                <path
+                  d="M4 76V34C4 13 17 2 39 2V18C28 18 23 24 23 34H40V76H4ZM54 76V34C54 13 67 2 89 2V18C78 18 73 24 73 34H90V76H54Z"
+                ></path>
+              </svg>
+            </div>
+            <p>
+              Working with Rehoboth is always a breath of fresh air. After more
+              than three product development cycles together, I am still
+              impressed by his brilliance and approach to work. He is super
+              smart, proactive, and a superb team player. As a Product Manager,
+              I am always pumped to work with him because he makes development
+              easy and enjoyable.
+            </p>
+            <div class="testimonial__person">
+              <h3>Modupe Akinwumi</h3>
+              <p>Senior Product Manager at Wiseki Technologies</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 80"
+                fill="currentColor"
+                class="testimonial__img"
+              >
+                <path
+                  d="M4 76V34C4 13 17 2 39 2V18C28 18 23 24 23 34H40V76H4ZM54 76V34C54 13 67 2 89 2V18C78 18 73 24 73 34H90V76H54Z"
+                ></path>
+              </svg>
+            </div>
+            <p>
+              I enjoy working with Rehoboth. He's one to always find solutions
+              to problems no matter how challenging they may be. He's also
+              someone you can count on to think things through, communicate
+              clearly, and get the job done. I'd happily recommend him to anyone
+              looking for a talented and reliable full-stack developer.
+            </p>
+            <div class="testimonial__person">
+              <h3>Kenechukwu Anyeache</h3>
+              <p>Senior Product Designer at Wiseki Technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <section class="cta-section">
+          <h1 class="cta-section__heading">
+            Want to bring <span>your ideas to life?</span>
+          </h1>
+          <div class="cta-section__content">
+            <p class="cta-section__info">
+              Reach out to me, let us discuss your ideas and how we can bring
+              them to live. I'm open to collaboration on solving interesting
+              problems and building interesting products.
+            </p>
+            <div>
+              <a
+                class="button"
+                href="https://wa.me/+2347055655615"
+                target="_blank"
+              >
+                Get in touch with me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="footer__divider"></div>
+        <div class="footer-section">
+          <div class="footer-section__header">
+            <h1>&lt;Alley /&gt;</h1>
+            <p>&copy; 2026 rehobothmd.dev <span></span> All rights reserved</p>
+          </div>
+          <div class="footer-section__main">
+            <div>
+              <h3>Core Skills</h3>
+              <ul>
+                <li>
+                  <span>Web Design</span>
+                </li>
+                <li>
+                  <span>Web Development</span>
+                </li>
+                <li>
+                  <span>Problem Solving</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get in touch</h3>
+              <ul>
+                <li>
+                  <a href="https://wa.me/+2347055655615" target="_blank">
+                    Direct Message <span>&rarr;</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rehobothmd/"
+                    target="_blank"
+                  >
+                    LinkedIn <span>&rarr;</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-me.html">About</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="academic-planner.html">Academic Planner</a>
+                </li>
+                <li>
+                  <a href="contact-me.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom">
+      <div class="bottom__time">
+        <span> Date & Time </span>
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+      <div class="bottom__audio">
+        <div class="audio">
+          <audio
+            src="https://rehoboth-md.s3.af-south-1.amazonaws.com/audio.mp3"
+            loop
+            id="page-audio"
+          ></audio>
+          <button class="audio__control" id="page-audio-control">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="play-icon"
+            >
+              <path
+                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="pause-icon"
+              style="display: none"
+            >
+              <rect x="14" y="3" width="5" height="18" rx="1" />
+              <rect x="5" y="3" width="5" height="18" rx="1" />
+            </svg>
+          </button>
+          <div class="audio__progress">
+            <div style="width: 0%" id="page-audio-progress"></div>
+          </div>
+        </div>
+        <div
+          class="bottom__audio-text"
+          title="Aliotta Haynes Jeremiah - Lake Shore Drive"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+            />
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+          </svg>
+          <p>Aliotta Haynes Jeremiah - Lake Shore Drive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M14 9 9 4 4 9" />
+        <path d="M20 20h-7a4 4 0 0 1-4-4V4" />
+      </svg>
+    </button>
+
+    <!-- JS Import -->
+    <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>
+  </body>
+</html>

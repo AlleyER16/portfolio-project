@@ -1,0 +1,1302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About Me :: Rehoboth Micah-Daniels | Software Engineer</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <meta
+      name="description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Social Media Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rehoboth-portfolio.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      property="og:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta name="twitter:image:width" content="800" />
+    <meta name="twitter:image:height" content="600" />
+
+    <!-- CSS Import -->
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/about.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand-toggle">
+          <button class="header__toggle" id="navbar-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <div class="header__brand">&lt;Alley /&gt;</div>
+        </div>
+        <nav class="header__right">
+          <ul class="header__navbar" id="navbar">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="about-me.html" class="active"> About </a>
+            </li>
+            <li>
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li>
+              <a href="academic-planner.html"> Academic Planner </a>
+            </li>
+          </ul>
+          <div class="header__actions">
+            <a href="contact-me.html" class="header__cta">
+              Contact Me!
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 12A10 10 0 1 1 12 2" />
+                <path d="M22 2 12 12" />
+                <path d="M16 2h6v6" />
+              </svg>
+            </a>
+            <button class="toggle" id="dark-mode-toggle">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-section__container container">
+        <div class="about-section__left">
+          <div class="profile">
+            <div class="profile__img-block">
+              <img alt="" src="/assets/imgs/alley.jpg" />
+            </div>
+            <div class="profile__intro">
+              <h1 class="profile__heading">
+                <span>Hello, I'm</span><br /><span>Rehoboth Micah-Daniels</span>
+              </h1>
+              <p>Software Engineer <span></span> Full-stack developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-section__main">
+          <h1>About Me</h1>
+          <article>
+            <p>
+              I’m a Full-Stack Developer focused on building scalable,
+              high-performance web applications across fintech and real-world
+              commerce systems.
+            </p>
+            <p>
+              Over the past few years, I’ve worked across backend and frontend
+              systems powering products in payments, crypto trading, and
+              large-scale business platforms. My work has included designing
+              RESTful APIs, building responsive user interfaces, and improving
+              system performance and reliability in production environments
+              serving 100k+ users.
+            </p>
+            <p>
+              I enjoy working on systems that sit at the intersection of user
+              experience and engineering complexity — especially fintech
+              platforms where correctness, scalability, and performance matter.
+              I’ve built everything from transaction-heavy backend services to
+              reusable frontend architecture and internal tooling to improve
+              developer productivity.
+            </p>
+            <p>
+              Currently, my focus is on full-stack engineering roles where I can
+              contribute across the stack, design systems end-to-end, and help
+              build products that scale cleanly and perform reliably in
+              production.
+            </p>
+          </article>
+          <article>
+            <h3>Carrer Aspirations</h3>
+            <p>
+              It is my goal to transfer fully from web development part of
+              software engineering to Systems programming. Where I can build low
+              level systems that power a lot of high level applications. I also
+              aim to further my education to study Robotics.
+            </p>
+            <p>
+              Professionally, it is my dream to work at a top company
+              specifically Google.
+            </p>
+          </article>
+          <article>
+            <h3>Hobbies and Interests</h3>
+            <p>
+              When I'm not crunching codes or thinking about solving a software
+              problem. I do a lot of other things for fun, below is what I'd
+              call my hobby table:
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Hobby</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Indoor Games</td>
+                  <td>Ludo, Scrabble, Chess and Monopoly</td>
+                </tr>
+                <tr>
+                  <td>Outdoor Games</td>
+                  <td>Basketball, Football, Table tennis</td>
+                </tr>
+                <tr>
+                  <td>Other Activities</td>
+                  <td>Movies, Swimming</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="technical-section">
+      <div class="technical-section__container container">
+        <div class="technical-section__header">
+          <p class="meta">
+            <span>// core.skills</span>
+          </p>
+          <h1 class="technical-section__heading">My Technical Skills</h1>
+        </div>
+        <div class="technical-section__skills">
+          <div class="technical-section__skill">
+            <span>01</span>
+            <h2>Problem Solving</h2>
+            <p>
+              Breaking down complex challenges and finding simple, effective
+              solutions through logical thinking and creativity.
+            </p>
+          </div>
+          <div class="technical-section__skill">
+            <span>02</span>
+            <h2>Web Design</h2>
+            <p>
+              Creating beautiful, intuitive, and user-centered digital
+              experiences with attention to detail and aesthetics.
+            </p>
+          </div>
+          <div class="technical-section__skill">
+            <span>02</span>
+            <h2>Web Development</h2>
+            <p>
+              Building responsive, performant, and functional websites that
+              bring ideas and designs to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <p class="meta">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m16 18 6-6-6-6" />
+          <path d="m8 6-6 6 6 6" />
+        </svg>
+        await fs.readFile("my_stack.json")
+      </p>
+      <div class="skills-section__skills">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>SASS</div>
+        <div>JavaScript</div>
+        <div>TypeScript</div>
+        <div>React</div>
+        <div>Next.js</div>
+        <div>Web Design</div>
+        <div>Accessibility</div>
+        <div>Node</div>
+        <div>Express.js</div>
+        <div>SQL</div>
+        <div>Postgres</div>
+        <div>MySQL</div>
+        <div>MonogoDB</div>
+        <div>Redis</div>
+        <div>Bull MQ</div>
+        <div>Web Deveopment</div>
+        <div>Performance</div>
+        <div>Git</div>
+        <div>Digital Ocean</div>
+      </div>
+    </div>
+
+    <!-- Career Section -->
+    <section class="career-section">
+      <div class="career-section__container container">
+        <div class="career-section__header">
+          <p class="meta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 19a5 5 0 0 1-5-5v8"></path>
+              <path
+                d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"
+              ></path>
+              <circle cx="13" cy="12" r="2"></circle>
+              <circle cx="20" cy="19" r="2"></circle>
+            </svg>
+            <span>git log</span>
+          </p>
+          <h1 class="career-section__heading">My Career</h1>
+          <div class="career-section__tab">
+            <button class="active" id="education-background-toggle">
+              Educational Background
+            </button>
+            <button class="" id="professional-work-toggle">
+              Professional Work
+            </button>
+          </div>
+        </div>
+        <div
+          class="career-section__careers"
+          style="display: flex"
+          id="educational-background"
+        >
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <img
+                    alt=""
+                    src="/assets/imgs/miva.jpeg"
+                    style="border-radius: 4px"
+                  />
+                  <h3 class="career2__company-name">MIVA Open University</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          B.Sc Software Enfineering
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Apr. 2026 - Present</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <img
+                    alt=""
+                    src="/assets/imgs/aptech.png"
+                    style="border-radius: 50%"
+                  />
+                  <h3 class="career2__company-name">
+                    Aptech Computer Education
+                  </h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Advanced Diploma in Software Engineering (ADSE)
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Dinstinction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Diploma in Information System Management (DISM)
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Dinstinction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Certificate of Proficiency in Information Systems
+                          Management (CPISM)
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Dinstinction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <div></div>
+                  <h3 class="career2__company-name">School Cert.</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">Secondary Education</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                          ></path>
+                          <path d="M22 10v6"></path>
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">Primary Education</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="career-section__careers"
+          style="display: none"
+          id="professional-work"
+        >
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <div></div>
+                  <h3 class="career2__company-name">RoninCube Enterprises</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Senior Full-stack Developer
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Remote</p>
+                          <p>Jun 2026 - Present</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Led development of two full-stack web applications
+                            using React/Next.js for the frontend and
+                            Node/Express/PostgreSQL for the backend.
+                          </li>
+                          <li>
+                            Deployed applications on Digital Ocean droplets and
+                            Digital Ocean Managed PostgreSQL, handling server
+                            setup, SSL, DNS, backups, and monitoring.
+                          </li>
+                          <li>
+                            Translated business requirements into technical
+                            specifications, interfaced directly with clients,
+                            and delivered features on schedule.
+                          </li>
+                          <li>
+                            Made key technology decisions to improve UX, reduce
+                            load times, and simplify development workflows.
+                          </li>
+                          <li>
+                            Implemented authentication, authorization,
+                            role-based access control, and optimized API
+                            endpoints.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <img alt="" src="/assets/imgs/crewel-tech-logo.png" />
+                  <h3 class="career2__company-name">Crewel Technologies</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Senior Back-end Developer
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Remote</p>
+                          <p>Aug 2024 - Mar 2026</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Led backend development for DigitSend, a
+                            cross-border payments platform enabling users to
+                            purchase RMB and pay Chinese suppliers.
+                          </li>
+                          <li>
+                            Designed and maintained scalable REST APIs powering
+                            the mobile application using Node.js, Express.js,
+                            and PostgreSQL
+                          </li>
+                          <li>
+                            Implemented asynchronous job processing and queue
+                            management using Redis and BullMQ for reliable
+                            background task execution.
+                          </li>
+                          <li>
+                            Applied clean architecture principles and backend
+                            optimizations to improve API performance,
+                            maintainability, and scalability.
+                          </li>
+                          <li>
+                            Developed internal admin and monitoring tools for
+                            operational visibility and transaction workflow
+                            management.
+                          </li>
+                          <li>
+                            Contributed to a platform that has processed over ₦1
+                            billion in user transactions.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <img alt="" src="/assets/imgs/wiseki-logo.png" />
+                  <h3 class="career2__company-name">Wiseki Technologies</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Senior Front-end Developer
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Hybrid</p>
+                          <p>Jan 2024 - Apr 2026</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Built and maintained scalable frontend applications
+                            serving over 140k+ combined users across fintech and
+                            digital commerce products.
+                          </li>
+                          <li>
+                            Collaborated across product, design, and backend
+                            teams to deliver production-ready fintech solutions
+                            with focus on performance, maintainability, and user
+                            experience.
+                          </li>
+                          <li>
+                            Improved frontend architecture and code organization
+                            for long-term scalability across multiple business
+                            modules and products.
+                          </li>
+                          <li>
+                            Implemented authentication, authorization,
+                            role-based access control, optimized state
+                            management and efficient API calls.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">Front-end Developer</h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Hybrid</p>
+                          <p>Nov 2022 - Dec 2023</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Developed high-performance user interfaces using
+                            React, Next.js, TypeScript, Redux, and TanStack
+                            Query.
+                          </li>
+                          <li>
+                            Transitioned application from v1 to v2 involving
+                            massive UI and performance improvements
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <div></div>
+                  <h3 class="career2__company-name">
+                    Agro360Farms and Holdings
+                  </h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Full-stack Developer
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Remote</p>
+                          <p>Apr 2022 - Oct 2022</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Developed and maintained full-stack web
+                            applications, supporting both frontend user
+                            experiences and backend business operations.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="career-section__career">
+            <div class="career-section__career-indicator"></div>
+            <div class="career-section__career-main">
+              <div class="career2">
+                <div class="career2__company">
+                  <div></div>
+                  <h3 class="career2__company-name">Pitason &amp; Smartpro</h3>
+                </div>
+                <div class="career2__main">
+                  <div class="career2__role">
+                    <div class="career2__role-timeline">
+                      <div class="career2__role-representation">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="m18 16 4-4-4-4"></path>
+                          <path d="m6 8-4 4 4 4"></path>
+                          <path d="m14.5 4-5 16"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="career2__role-main">
+                      <div class="career2__role-header">
+                        <h4 class="career2__role-title">
+                          Software and Business Developer
+                        </h4>
+                        <div class="career2__role-summary">
+                          <p>Full-time</p>
+                          <p>Remote</p>
+                          <p>Mar 2021 - Mar 2022</p>
+                        </div>
+                      </div>
+                      <div class="career2__role-block">
+                        <h3 class="career2__role-block-heading">
+                          Key Responsibilities
+                        </h3>
+                        <ul class="career2__role-block-list">
+                          <li>
+                            Contributed to software solutions and business
+                            process improvements through application
+                            development, technical support, and cross-functional
+                            collaboration.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <section class="cta-section">
+          <h1 class="cta-section__heading">
+            Want to bring <span>your ideas to life?</span>
+          </h1>
+          <div class="cta-section__content">
+            <p class="cta-section__info">
+              Reach out to me, let us discuss your ideas and how we can bring
+              them to live. I'm open to collaboration on solving interesting
+              problems and building interesting products.
+            </p>
+            <div>
+              <a
+                class="button"
+                href="https://wa.me/+2347055655615"
+                target="_blank"
+              >
+                Get in touch with me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="footer__divider"></div>
+        <div class="footer-section">
+          <div class="footer-section__header">
+            <h1>&lt;Alley /&gt;</h1>
+            <p>&copy; 2026 rehobothmd.dev <span></span> All rights reserved</p>
+          </div>
+          <div class="footer-section__main">
+            <div>
+              <h3>Core Skills</h3>
+              <ul>
+                <li>
+                  <span>Web Design</span>
+                </li>
+                <li>
+                  <span>Web Development</span>
+                </li>
+                <li>
+                  <span>Problem Solving</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get in touch</h3>
+              <ul>
+                <li>
+                  <a href="https://wa.me/+2347055655615" target="_blank">
+                    Direct Message <span>&rarr;</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rehobothmd/"
+                    target="_blank"
+                  >
+                    LinkedIn <span>&rarr;</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-me.html">About</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="academic-planner.html">Academic Planner</a>
+                </li>
+                <li>
+                  <a href="contact-me.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom">
+      <div class="bottom__time">
+        <span> Date & Time </span>
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+      <div class="bottom__audio">
+        <div class="audio">
+          <audio
+            src="https://rehoboth-md.s3.af-south-1.amazonaws.com/audio.mp3"
+            loop
+            id="page-audio"
+          ></audio>
+          <button class="audio__control" id="page-audio-control">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="play-icon"
+            >
+              <path
+                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="pause-icon"
+              style="display: none"
+            >
+              <rect x="14" y="3" width="5" height="18" rx="1" />
+              <rect x="5" y="3" width="5" height="18" rx="1" />
+            </svg>
+          </button>
+          <div class="audio__progress">
+            <div style="width: 0%" id="page-audio-progress"></div>
+          </div>
+        </div>
+        <div
+          class="bottom__audio-text"
+          title="Aliotta Haynes Jeremiah - Lake Shore Drive"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+            />
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+          </svg>
+          <p>Aliotta Haynes Jeremiah - Lake Shore Drive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M14 9 9 4 4 9" />
+        <path d="M20 20h-7a4 4 0 0 1-4-4V4" />
+      </svg>
+    </button>
+
+    <!-- JS Import -->
+    <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/about.js"></script>
+  </body>
+</html>

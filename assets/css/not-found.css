@@ -1,0 +1,40 @@
+.not-found {
+  background-color: var(--background-subtle);
+  padding: 20rem 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.not-found__label {
+  margin-bottom: 2.4rem;
+
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+
+.not-found__main {
+  margin-bottom: 5.6rem;
+}
+
+.not-found__main h1 {
+  font-size: 5.2rem;
+}
+
+.not-found__main p {
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+  .not-found__main h1 {
+    font-size: 3.6rem;
+  }
+
+  .not-found__main p br {
+    display: none;
+  }
+}

@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Academic Planner :: Rehoboth Micah-Daniels | Software Engineer
+    </title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <meta
+      name="description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Social Media Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rehoboth-portfolio.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      property="og:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rehoboth Micah-Daniels | Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="I’m a Full-Stack Developer focused on building scalable, high-performance web applications across fintech and real-world commerce systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rehoboth-portfolio.netlify.app/assets/imgs/social-img.png"
+    />
+    <meta name="twitter:image:width" content="800" />
+    <meta name="twitter:image:height" content="600" />
+
+    <!-- CSS Import -->
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/academic-planner.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand-toggle">
+          <button class="header__toggle" id="navbar-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <div class="header__brand">&lt;Alley /&gt;</div>
+        </div>
+        <nav class="header__right">
+          <ul class="header__navbar" id="navbar">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="about-me.html"> About </a>
+            </li>
+            <li>
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li>
+              <a href="academic-planner.html" class="active">
+                Academic Planner
+              </a>
+            </li>
+          </ul>
+          <div class="header__actions">
+            <a href="contact-me.html" class="header__cta">
+              Contact Me!
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 12A10 10 0 1 1 12 2" />
+                <path d="M22 2 12 12" />
+                <path d="M16 2h6v6" />
+              </svg>
+            </a>
+            <button class="toggle" id="dark-mode-toggle">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Academic Planner -->
+    <section class="planner">
+      <div class="planner__container">
+        <h1 class="planner__heading">Academic Planner</h1>
+        <div class="planner__overviews">
+          <div class="planner__overview">
+            <div class="planner__overview-icon-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 5h.01"></path>
+                <path d="M3 12h.01"></path>
+                <path d="M3 19h.01"></path>
+                <path d="M8 5h13"></path>
+                <path d="M8 12h13"></path>
+                <path d="M8 19h13"></path>
+              </svg>
+            </div>
+            <div class="planner__overview-main">
+              <h3 class="planner__overview-value" id="num-all">0</h3>
+              <p>All Tasks</p>
+            </div>
+          </div>
+          <div class="planner__overview">
+            <div class="planner__overview-icon-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M13 5h8"></path>
+                <path d="M13 12h8"></path>
+                <path d="M13 19h8"></path>
+                <path d="m3 17 2 2 4-4"></path>
+                <path d="m3 7 2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="planner__overview-main">
+              <h3 class="planner__overview-value" id="num-completed">0</h3>
+              <p>Completed Tasks</p>
+            </div>
+          </div>
+          <div class="planner__overview">
+            <div class="planner__overview-icon-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M13 5h8"></path>
+                <path d="M13 12h8"></path>
+                <path d="M13 19h8"></path>
+                <path d="m3 17 2 2 4-4"></path>
+                <rect x="3" y="4" width="6" height="6" rx="1"></rect>
+              </svg>
+            </div>
+            <div class="planner__overview-main">
+              <h3 class="planner__overview-value" id="num-pending">0</h3>
+              <p>Pending Tasks</p>
+            </div>
+          </div>
+        </div>
+        <div class="planner__main">
+          <div class="planner__main-header">
+            <div class="tab-buttons">
+              <button class="active" id="all-toggle">All</button>
+              <button id="pending-toggle">
+                Pending
+                <span style="display: none" id="num-button-pending">0</span>
+              </button>
+              <button id="completed-toggle">Completed</button>
+            </div>
+            <div class="planner__main-header-action">
+              <button class="button" id="add-task-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+                New Task
+              </button>
+            </div>
+          </div>
+          <div class="planner__main-header2">Task List</div>
+          <ul class="tasks" id="tasks">
+            <li class="tasks__empty">You have no tasks</li>
+          </ul>
+        </div>
+        <div class="planner__actions">
+          <button class="button button--outline-2" id="clear-tasks-button">
+            Clear all tasks
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <section class="cta-section">
+          <h1 class="cta-section__heading">
+            Want to bring <span>your ideas to life?</span>
+          </h1>
+          <div class="cta-section__content">
+            <p class="cta-section__info">
+              Reach out to me, let us discuss your ideas and how we can bring
+              them to live. I'm open to collaboration on solving interesting
+              problems and building interesting products.
+            </p>
+            <div>
+              <a
+                class="button"
+                href="https://wa.me/+2347055655615"
+                target="_blank"
+              >
+                Get in touch with me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="footer__divider"></div>
+        <div class="footer-section">
+          <div class="footer-section__header">
+            <h1>&lt;Alley /&gt;</h1>
+            <p>&copy; 2026 rehobothmd.dev <span></span> All rights reserved</p>
+          </div>
+          <div class="footer-section__main">
+            <div>
+              <h3>Core Skills</h3>
+              <ul>
+                <li>
+                  <span>Web Design</span>
+                </li>
+                <li>
+                  <span>Web Development</span>
+                </li>
+                <li>
+                  <span>Problem Solving</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get in touch</h3>
+              <ul>
+                <li>
+                  <a href="https://wa.me/+2347055655615" target="_blank">
+                    Direct Message <span>&rarr;</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rehobothmd/"
+                    target="_blank"
+                  >
+                    LinkedIn <span>&rarr;</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-me.html">About</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="academic-planner.html">Academic Planner</a>
+                </li>
+                <li>
+                  <a href="contact-me.html">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom">
+      <div class="bottom__time">
+        <span> Date & Time </span>
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+      <div class="bottom__audio">
+        <div class="audio">
+          <audio
+            src="https://rehoboth-md.s3.af-south-1.amazonaws.com/audio.mp3"
+            loop
+            id="page-audio"
+          ></audio>
+          <button class="audio__control" id="page-audio-control">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="play-icon"
+            >
+              <path
+                d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              id="pause-icon"
+              style="display: none"
+            >
+              <rect x="14" y="3" width="5" height="18" rx="1" />
+              <rect x="5" y="3" width="5" height="18" rx="1" />
+            </svg>
+          </button>
+          <div class="audio__progress">
+            <div style="width: 0%" id="page-audio-progress"></div>
+          </div>
+        </div>
+        <div
+          class="bottom__audio-text"
+          title="Aliotta Haynes Jeremiah - Lake Shore Drive"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+            />
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+          </svg>
+          <p>Aliotta Haynes Jeremiah - Lake Shore Drive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M14 9 9 4 4 9" />
+        <path d="M20 20h-7a4 4 0 0 1-4-4V4" />
+      </svg>
+    </button>
+
+    <!-- JS Import -->
+    <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/academic-planner.js"></script>
+  </body>
+</html>
