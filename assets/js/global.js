@@ -133,3 +133,31 @@ audioEl.addEventListener("pause", () => {
 audioEl.addEventListener("timeupdate", () => {
   audioProgressEl.style.width = `${(audioEl.currentTime / audioEl.duration) * 100}%`;
 });
+
+////////////////////////////////////////////
+///// Back to Top
+const backToTopButton = document.getElementById("back-to-top");
+
+document.addEventListener("scroll", () => {
+  const show = window.scrollY >= 1000;
+
+  if (show) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const show = window.scrollY >= 1000;
+
+  if (show) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
