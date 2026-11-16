@@ -292,3 +292,83 @@
   width: 2.4rem;
   height: 2.4rem;
 }
+
+/* Task modal */
+.task-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(0);
+
+  max-height: 85dvh;
+  width: 60rem;
+  max-width: calc(100dvw - 4.8rem);
+
+  border-radius: 0.8rem;
+  background-color: var(--background);
+  box-shadow: 0 8px 64px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.task-modal.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.task-modal__top {
+  padding: 2.4rem;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-modal__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.task-modal__close:hover {
+  background-color: var(--toggle-bg);
+}
+
+.task-modal__body {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.task-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.task-modal__form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}

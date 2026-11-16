@@ -1,23 +1,10 @@
 ///////////////////////////////////////////////
 ////// Academic Planner
-let TASKS = [
-  {
-    id: 1,
-    description: "Go to the mall with friends",
-    startTime: "12:00 PM",
-    endTime: "1:00 PM",
-    completed: false,
-  },
-  {
-    id: 2,
-    description: "Hang out, grab a bite and a drink",
-    startTime: "12:00 PM",
-    endTime: "1:00 PM",
-    completed: true,
-  },
-];
+// Data
+let TASKS = [];
 let TASKS_FILTER = "all"; // all | pending | completed
 
+// Elements
 const tasksEl = document.getElementById("tasks");
 
 const numAllEl = document.getElementById("num-all");
@@ -176,12 +163,7 @@ const deleteTask = (id) => {
   paintTasks();
 };
 
-const editTask = (id) => {
-  const task = TASKS.find((task) => task.id === id);
-  alert(`Working on it: ${task.description}`);
-};
-
-// Clear and add task
+// Clear task
 const clearTasksButton = document.getElementById("clear-tasks-button");
 
 clearTasksButton.addEventListener("click", () => {
@@ -190,14 +172,107 @@ clearTasksButton.addEventListener("click", () => {
   paintTasks();
 });
 
+// Add / Edit task
 const addTaskButton = document.getElementById("add-task-button");
 
+const taskModal = document.getElementById("task-modal");
+const taskModalClose = document.getElementById("task-modal-close");
+const taskModalOverlay = document.getElementById("task-overlay");
+
+const taskModalTitle = document.getElementById("task-modal-title");
+const taskModalActionBtn = document.getElementById("task-modal-action-btn");
+
+const taskForm = document.getElementById("task-form");
+
+const descriptionInput = taskForm.elements.namedItem("description");
+const startTimeInput = taskForm.elements.namedItem("start_time");
+const endTimeInput = taskForm.elements.namedItem("end_time");
+
+const errorMessage = document.getElementById("error-message");
+
 addTaskButton.addEventListener("click", () => {
-  console.log("Working on it");
+  descriptionInput.value = "";
+  startTimeInput.value = "";
+  endTimeInput.value = "";
+
+  errorMessage.style.display = "none";
+
+  taskForm.dataset.for = "add";
+  taskForm.dataset.id = "";
+
+  taskModalTitle.innerHTML = "Add Task";
+  taskModalActionBtn.innerHTML = "Add Task";
+
+  taskModal.classList.add("open");
+  taskModalOverlay.classList.add("show");
 });
 
-const addEditTaskForm = document.getElementById("task-form");
+const closeTaskModal = () => {
+  taskModal.classList.remove("open");
+  taskModalOverlay.classList.remove("show");
+};
 
-addEditTaskForm.addEventListener("submit", (e) => {
+taskModalClose.addEventListener("click", closeTaskModal);
+
+taskModalOverlay.addEventListener("click", closeTaskModal);
+
+const editTask = (id) => {
+  const task = TASKS.find((task) => task.id === id);
+  if (!task) return;
+
+  descriptionInput.value = task.description;
+  startTimeInput.value = task.startTime;
+  endTimeInput.value = task.endTime;
+
+  taskForm.dataset.for = "update";
+  taskForm.dataset.id = task.id;
+
+  taskModalTitle.innerHTML = "Edit Task";
+  taskModalActionBtn.innerHTML = "Edit Task";
+
+  taskModal.classList.add("open");
+  taskModalOverlay.classList.add("show");
+};
+
+const showError = (error) => {
+  errorMessage.querySelector("p").innerHTML = error;
+  errorMessage.style.display = "block";
+};
+
+const hideError = () => {
+  errorMessage.style.display = "none";
+};
+
+taskForm.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  const description = descriptionInput.value;
+  const startTime = startTimeInput.value;
+  const endTime = endTimeInput.value;
+
+  if (!description || !startTime || !endTime)
+    return showError("Fill in all fields");
+
+  hideError();
+
+  const purpose = taskForm.dataset.for;
+
+  if (purpose === "add") {
+    TASKS = [
+      { id: Date.now(), description, startTime, endTime, completed: false },
+      ...TASKS,
+    ];
+  } else if (purpose === "update") {
+    const id = taskForm.dataset.id;
+
+    TASKS = TASKS.map((task) =>
+      task.id.toString() === id.toString()
+        ? { ...task, description, startTime, endTime }
+        : task,
+    );
+  }
+
+  paintTasks();
+
+  closeTaskModal();
 });
