@@ -26,7 +26,7 @@
   --border: #eaeaea;
   --border-2: #f7f7f7;
 
-  --shadow: 0 8px 64px rgba(0, 0, 0, 0.1);
+  --shadow: #0000001a;
 
   --contact-bg: #fcfcfc;
 
@@ -71,10 +71,7 @@
   --border: light-dark(#eaeaea, #33303f);
   --border-2: light-dark(#f7f7f7, #25232c);
 
-  --shadow: light-dark(
-    0 8px 64px rgba(0, 0, 0, 0.1),
-    0 8px 24px rgba(0, 0, 0, 0.5)
-  );
+  --shadow: light-dark(#0000001a, #00000080);
 
   --contact-bg: light-dark(#fcfcfc, #15141b);
 
@@ -671,7 +668,7 @@ a:visited {
   padding: 1.6rem;
   background-color: var(--background);
   border-radius: 0.8rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 24px var(--shadow);
   z-index: 99;
 
   display: flex;

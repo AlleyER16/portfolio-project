@@ -39,7 +39,7 @@
 .planner__overview {
   background-color: var(--background);
   padding: 2.4rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 24px var(--shadow);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +78,7 @@
 
 .planner__main {
   background-color: var(--background);
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 24px var(--shadow);
 }
 
 .planner__main-header {
